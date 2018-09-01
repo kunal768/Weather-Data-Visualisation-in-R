@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather Stuff</title>
+</head>
+<style type="text/css">
+	div {
+  display:inline-block;
+  position:relative;
+  margin:0.4em;  padding:1em;
+  cursor:pointer;
+  background:#e1e1e1;  color:white; 
+  z-index:0;
+
+}
+div:before {
+  content: "";
+  position: absolute;
+  z-index:-1;
+  top: 0;  left: 0;  right: 0;  bottom: 0;
+  background: #2098d1;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform .3s ease-out;
+}
+div:hover:before{transform: scaleX(1);}
+</style>
+
+<body background="{{url_for('static', filename = 'w.gif')}}" size = 100% width = 100% height = 100%>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<a href="/station/Friday"><div>Friday 3rd Aug</div></a>
+<a href="/station/Saturday"><div>Saturday 4th Aug</div></a>
+<a href="/station/Sunday"><div> Sunday 5th Aug</div></a>
+<a href="/station/Monday"><div>Monday 6th Aug</div></a>
+
+</body>
+</html>
