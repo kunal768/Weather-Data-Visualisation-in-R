@@ -3,5 +3,4 @@
 <p>runs an Rscript that plots (ggplots) that days weather data and returns the created plot in the app</p>
 <p>It thus has a blend of both python and R ...</p>
 Some glimplses :
-<img src = "Output_main.PNG" width = 600 height = 800></img>
-
+<img src = "Output_main.PNG" width = 1280 height = 1280>
